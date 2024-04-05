@@ -1,0 +1,16 @@
+version: 2.1
+
+jobs:
+  hello-job:
+    docker:
+      - image: cimg/node:17.2.0
+    steps:
+      - checkout
+      - run: 
+          name: Successfully checked out repo?
+          command: cat README.md
+
+workflows:
+  my-workflow:
+    jobs:
+      - hello-job
