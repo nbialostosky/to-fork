@@ -7,7 +7,7 @@ jobs:
     steps:
       - checkout
       - run: 
-          name: Successfully checked out repo?
+          name: Successfully checked out repo
           command: cat README.md
 
 workflows:
